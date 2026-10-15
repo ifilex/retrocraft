@@ -1,0 +1,6 @@
+{
+  "name": "PlayCanvas 3D Platformer & Level Studio",
+  "description": "Retro 8-bit 3D physics platformer with Minecraft-style voxel graphics, procedural pixel textures, chiptune synthesizer, CRT scanline filters, moving obstacles, achievements, multiplatform controls (gamepad/touch), bilingual EN/ES, and an expandable BASIC level studio with community cloud sharing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

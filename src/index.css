@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-pixel {
+    font-family: 'Press Start 2P', monospace, sans-serif;
+  }
+  .font-vt323 {
+    font-family: 'VT323', monospace, sans-serif;
+  }
+  .font-silk {
+    font-family: 'Silkscreen', monospace, sans-serif;
+  }
+
+  .pixelated-render {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+  }
+
+  /* 8-bit Chunky Retro NES Box & Button Borders */
+  .pixel-box {
+    border: 4px solid #0f172a;
+    box-shadow: 4px 4px 0px #000000;
+  }
+
+  .pixel-box-sm {
+    border: 2px solid #0f172a;
+    box-shadow: 2px 2px 0px #000000;
+  }
+
+  .pixel-btn {
+    border: 3px solid #0f172a;
+    box-shadow: 0 4px 0px #000000;
+    transition: transform 0.05s ease, box-shadow 0.05s ease;
+  }
+
+  .pixel-btn:active {
+    transform: translateY(3px);
+    box-shadow: 0 1px 0px #000000;
+  }
+
+  /* CRT Scanlines Overlay */
+  .crt-overlay {
+    background: linear-gradient(
+      rgba(18, 16, 16, 0) 50%, 
+      rgba(0, 0, 0, 0.35) 50%
+    ), linear-gradient(
+      90deg,
+      rgba(255, 0, 0, 0.03),
+      rgba(0, 255, 0, 0.01),
+      rgba(0, 0, 255, 0.03)
+    );
+    background-size: 100% 3px, 6px 100%;
+    pointer-events: none;
+  }
+}
